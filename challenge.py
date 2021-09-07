@@ -100,14 +100,33 @@
 
 
 # 입력받은 값을 계산하기
-a = input("a = ")
-b = input("b = ")
-def plus():
-    return int(a)+int(b)
-print(plus())   
+# a = input("a = ")
+# b = input("b = ")
+# def plus():
+#     return int(a)+int(b)
+# print(plus())   
 
 
 
 
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+def is_on_list():
+  print("Is Wed on 'days' list?", "Wed" in days )
+is_on_list()
+
+def get_x():
+  print("The fourth item in 'days' is:", days[3])
+get_x()
+
+def add_x():
+  days.append("Sat")
+  print(days)
+add_x()
+
+def remove_x():
+  days.remove("Mon")
+  print(days)
+remove_x()
 
 
